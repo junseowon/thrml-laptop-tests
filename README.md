@@ -11,7 +11,19 @@
 
 ---
 
-## ▶️ 실행 방법
+## ▶️ 설치가 필요한 핵심 패키지
+1. **thrml**
+  </br>Extropic의 TSU 시뮬레이터 본체이며 SpinNode, IsingEBM, estimate_kl_grad 등 모든 핵심 기능을 제공합니다.
+  이 라이브러리를 설치하면 jax, jaxlib, numpy가 자동으로 함께 설치됩니다.
+2. **dwave-networkx**
+  </br>dwave_networkx.pegasus_graph를 import 하기 위해 필요합니다. 지금은 주석 처리했지만, import 문 자체가 존재하므로 라이브러리가 없으면 코드가 실행되지 않습니다. 이 라이브러리를 설치하면 networkx가 자동으로 함께 설치됩니다.
+3. **matplotlib**
+  </br>plt.show()를 사용해 벤치마크 성능 그래프를 그리기 위해 필요합니다.
+
+### 설치 명령어
+`pip install thrml`</br>
+`pip install dwave-networkx`</br>
+`pip install matplotlib`
 
 ---
 
