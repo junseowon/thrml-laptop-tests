@@ -20,6 +20,7 @@
 3.  **벤치마크 규모 축소:** `batch_sizes`를 `[8, 16, 32, 64, 128]`로 수정하여 랩탑에서 테스트 가능한 범위로 조정했습니다.
 4.  **GPU 이름 자동 감지:** `subprocess`와 `nvidia-smi`를 사용하여 Matplotlib 그래프 제목에 현재 실행 중인 GPU의 모델명이 자동으로 표시되도록 수정했습니다.
 
+
 ---
 
 ## 📊 벤치마크 결과
@@ -29,14 +30,15 @@
 ### 1. 랩탑: NVIDIA GeForce RTX 4060 Laptop GPU
 
 * **결과:** "서멀 스로틀링(Thermal Throttling)"으로 인해 성능 그래프가 불안정하게 널뛰는 M자형 곡선이 나타났습니다. (최대 약 0.05 Flips/ns)
-* **(여기에 `image_72dfd1.png` 그래프 이미지를 업로드하세요)**
-    
+<img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/ad86063f-cff4-4471-8940-68bef3a638f4" />
+
     
 
 ### 2. 클라우드: Google Colab (Tesla T4)
 
 * **결과:** 강력한 냉각 시스템 덕분에 서멀 스로틀링 없이, 작업량이 늘어남에 따라 성능이 정직하게 증가하는 깨끗한 J-커브를 보여주었습니다. (최대 약 1.45 Flips/ns)
-* **(여기에 `image_7ce68a.png` 코랩 그래프 이미지를 업로드하세요)**
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/41d439a0-e8c8-45a8-aad1-54a2bd0532a7" />
+
     
     
 
