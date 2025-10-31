@@ -1,0 +1,8 @@
+streamlit
+numpy
+jax
+jaxlib
+thrml
+dwave-networkx
+networkx
+matplotlib
